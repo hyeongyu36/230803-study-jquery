@@ -8,23 +8,17 @@
     <script src="js/jquery.bxslider.js"></script>
     <link rel="stylesheet" href="css/jquery.bxslider.min.css" />
     <style>
-      *{
+      * {
         margin: 0;
         padding: 0;
-
       }
-      ul,li{
+      ul,
+      li {
         list-style: none;
       }
-      #gallery_wrap{
+      #gallery_wrap {
         margin: 30px auto;
-        width: 450px;
-      }
-      .slider-pager{
-        text-align: center;
-      }
-      .slider-pager li{
-        display: inline-block;
+        width: 600px;
       }
     </style>
   </head>
@@ -36,32 +30,18 @@
         <li><img src="images/pic_3.jpg" alt="사진3" /></li>
         <li><img src="images/pic_4.jpg" alt="사진4" /></li>
         <li><img src="images/pic_5.jpg" alt="사진5" /></li>
-      </ul>
-      <ul class="slider-pager">
-        <li><a href="#" data-slide-index="0">
-          <img src="images/pic_t1.jpg" alt="사진1"></a>
-      </li>
-      <li><a href="#" data-slide-index="1">
-          <img src="images/pic_t2.jpg" alt="사진2"></a>
-      </li>
-      <li><a href="#" data-slide-index="2">
-          <img src="images/pic_t3.jpg" alt="사진3"></a>
-      </li>
-      <li><a href="#" data-slide-index="3">
-          <img src="images/pic_t4.jpg" alt="사진4"></a>
-      </li>
-      <li><a href="#" data-slide-index="4">
-          <img src="images/pic_t5.jpg" alt="사진5"></a>
-      </li>
+        <li><img src="images/pic_6.jpg" alt="사진6" /></li>
+        <li><img src="images/pic_7.jpg" alt="사진7" /></li>
+        <li><img src="images/pic_8.jpg" alt="사진8" /></li>
       </ul>
     </div>
     <script>
       $(function () {
         $(".slide_gallery").bxSlider({
-          auto:true,
-          autocontrols:false,
-          pagerCustom:".slider-pager"
-        })
+          auto: true,
+          autoControls: true,
+          stopAutoOnClick: true,
+        });
       });
     </script>
   </body>
